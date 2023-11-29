@@ -22,7 +22,7 @@ export default function TheMain() {
                                                 {post.title}
                                             </a>
                                         </h3>
-                                        <p className="mt-1 text-sm text-gray-500">{/* Aggiungi la descrizione del prodotto qui */}</p>
+                                        <p className="mt-1 text-sm text-gray-500">{post.description}</p>
                                     </div>
                                 </div>
                             </div>
