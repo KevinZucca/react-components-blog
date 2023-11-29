@@ -1,11 +1,12 @@
 import postsList from '../../posts.json';
+import Article from './Article';
 
 export default function TheMain() {
     return (
         <main className="border">
             <div className="bg-white">
                 <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">Design Posts</h2>
+                    <Article /> 
 
                     <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 gap-y-10 overflow-hidden">
                         {postsList.map((post, i) => (
@@ -29,6 +30,9 @@ export default function TheMain() {
                     </div>
                 </div>
             </div>
+
+
+
         </main>
     );
 }
